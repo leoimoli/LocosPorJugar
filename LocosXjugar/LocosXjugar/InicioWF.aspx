@@ -3,746 +3,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Locos x Jugar</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/Fevicon.png" type="image/png">
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><span>Locos x Jugar</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu"></span>Menu
-	     
-            </button>
 
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">Complejos</a></li>
-                    <li class="nav-item"><a href="destination.html" class="nav-link">Suma Tu complejo</a></li>
-                    <%--     <li class="nav-item"><a href="hotel-resto.html" class="nav-link">Hotels &amp; Restaurant</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	          <li class="nav-item cta"><a href="#" class="nav-link">Book Now</a></li>--%>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- END nav -->
+    <!--================ Header Menu Area start =================-->
+    <header class="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container box_1620">
+                    <a class="navbar-brand logo_h" href="index.html">
+                        <img src="img/Tennis.png" alt="">
+                        <img src="img/Tennis.png" alt="">
+                        <img src="img/Tennis.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/Pasto.jpg');" data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
-                <div class="col-md-7 ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }">
-                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Busca tu lugar en el día y horario que prefieras</h1>
-                    <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">El sitio que facilita tu busqueda</p>
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav justify-content-end">
+                            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#informacion">Complejos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#formulario">Sumate</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
                 </div>
+            </nav>
+        </div>
+    </header>
+    <!--================Header Menu Area =================-->
+
+
+    <!--================ Bienvenido =================-->
+    <section class="hero-banner text-center" id="inicio">
+        <div class="container">
+            <p class="text-uppercase">Bienvenido</p>
+            <h1>Locos x Jugar</h1>
+            <p class="hero-subtitle">Encontra el momento y lugar indicado para practicar tu deporte preferido</p>
+            <a class="button button-outline" href="#informacion">BUSCAR</a>
+        </div>
+    </section>
+    <!--================ Bienvenido =================-->
+
+    <!--================ Info =================-->
+    <section class="mb-5 pt-xl-235" style="padding-top: 50px;" id="informacion">
+        <div class="container">
+            <div class="section-intro pb-85px text-center">
+                <h2>Información del trámite</h2>
+                <div class="section-style"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-service text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-search-dollar" style="font-size: 50px;"></i>
+                        </div>
+                        <h3>Consultá tu deuda</h3>
+                        <p>Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great  </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-service text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-file-invoice-dollar" style="font-size: 50px;"></i>
+                        </div>
+                        <h3>Imprimí el comprobante</h3>
+                        <p>Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great  </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-service text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-money-check-alt" style="font-size: 50px;"></i>
+                        </div>
+                        <h3>Pagalo en cualquier Bapro</h3>
+                        <p>Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great  </p>
+                    </div>
+                </div>
+
             </div>
         </div>
+    </section>
+    <!--================ Info =================-->
+
+    <!--================ Modal persona =================-->
+    <div class="modal fade" id="modal-persona" tabindex="-1" role="dialog" aria-labelledby="label-persona" aria-hidden="true">
     </div>
+    <!--================ Modal persona =================-->
 
-    <section class="ftco-section ftco-no-pb ftco-no-pt">
+    <!--================ Modal vehiculo =================-->
+    <div class="modal fade" id="modal-vehiculo" tabindex="-1" role="dialog" aria-labelledby="label-vehiculo" aria-hidden="true">
+    </div>
+    <!--================ Modal vehiculo =================-->
+
+
+    <!--================ Form =================-->
+    <section class="bg-gray domain-search" id="formulario">
+        <div class="section-intro pb-85px text-center">
+            <h2>Busca tu lugar</h2>
+            <div class="section-style"></div>
+        </div>
         <div class="container">
-            <div class="row">
+            <div class="row no-gutters">
                 <div class="col-md-12">
-                    <div class="search-wrap-1 ftco-animate p-4">
-                        <form action="#" class="search-property-1">
-                            <div class="row">
-                                <%--<div class="col-lg align-items-end">
-		        				<div class="form-group">
-		        					<label for="#">Destination</label>
-		          				<div class="form-field">
-		          					<div class="icon"><span class="ion-ios-search"></span></div>
-				                <input type="text" class="form-control" placeholder="Search place">
-				              </div>
-			              </div>
-		        			</div>--%>
-                                <div class="col-lg align-items-end">
+                    <%-- <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <h3 class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Persona física</h3>
+                        </li>
+                        <li class="nav-item">
+                            <h3 class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Vehículo particular</h3>
+                        </li>
+                    </ul>--%>
+                    <br>
+                    <hr>
+                    <div class="tab-content" id="pills-tabContent">
+
+                        <!-- Por DNI -->
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="col-md-3 col-lg-2 text-center text-md-left mb-3 mb-md-0">
+                            </div>
+                            <div class="col-md-9 col-lg-10 pl-2 pl-xl-5">
+                                <form class="form-inline flex-nowrap form-domainSearch" runat="server">
                                     <div class="form-group">
-                                        <label for="#">Que Jugas?</label>
-                                        <div class="form-field">
-                                            <div class="select-wrap">
-                                                <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                                <select name="" id="" class="form-control">
-                                                    <option value="">Basquet</option>
-                                                    <option value="">Fútbol 5</option>
-                                                    <option value="">Fútbol 6</option>
-                                                    <option value="">Fútbol 7</option>
-                                                    <option value="">Fútbol 9</option>
-                                                    <option value="">Fútbol 11</option>
-                                                    <option value="">Paddel</option>
-                                                    <option value="">Tennis</option>
-                                                </select>
-                                            </div>
+                                        <div style="text-align: center; padding-left: 100px">
+                                            <asp:Label ID="QueJugas" runat="server" Text="Que Jugas?"></asp:Label>
                                         </div>
+                                        <div>
+                                            <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                                        </div>
+                                        <%-- <label for="TipoDeCancha" class="sr-only">Que Jugas?</label>
+                                        <select class="form-control" id="TipoDeCancha" required>
+                                            <option value="0">Basquet</option>
+                                            <option value="2">Fútbol 5</option>
+                                            <option value="3">Fútbol 6</option>
+                                            <option value="4">Fútbol 7</option>
+                                            <option value="5">Fútbol 9</option>
+                                            <option value="6">Fútbol 11</option>
+                                            <option value="7">Paddel</option>
+                                            <option value="8">Tennis</option>
+                                        </select>--%>
                                     </div>
-                                </div>
-                                <div class="col-lg align-items-end">
                                     <div class="form-group">
-                                        <label for="#">Que Día?</label>
-                                        <div class="form-field">
-                                            <div class="icon"><span class="ion-ios-calendar"></span></div>
-                                            <input type="text" class="form-control checkin_date" placeholder="Día">
-                                        </div>
+                                        <label for="nroDNI" class="sr-only">Numero</label>
+                                        <input type="text" class="form-control" id="nroDNI" placeholder="Número">
                                     </div>
-                                </div>
-                                <div class="col-lg align-items-end">
-                                    <div class="form-group">
-                                        <label for="#">Hora?</label>
-                                        <div class="form-field">
-                                            <div class="icon"><span class="ion-ios-calendar"></span></div>
-                                            <input type="text" class="form-control checkout_date" placeholder="Horario">
-                                        </div>
-                                    </div>
-                                </div>
-                                <%--	<div class="col-lg align-items-end">
-		        				<div class="form-group">
-		        					<label for="#">Tipo de Cancha</label>
-		        					<div class="form-field">
-		          					<div class="select-wrap">
-		                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-		                      <select name="" id="" class="form-control">
-		                        <option value="">$5,000</option>
-		                        <option value="">$10,000</option>
-		                        <option value="">$50,000</option>
-		                        <option value="">$100,000</option>
-		                        <option value="">$200,000</option>
-		                        <option value="">$300,000</option>
-		                        <option value="">$400,000</option>
-		                        <option value="">$500,000</option>
-		                        <option value="">$600,000</option>
-		                        <option value="">$700,000</option>
-		                        <option value="">$800,000</option>
-		                        <option value="">$900,000</option>
-		                        <option value="">$1,000,000</option>
-		                        <option value="">$2,000,000</option>
-		                      </select>
-		                    </div>
-				              </div>
-			              </div>
-		        			</div>--%>
-                                <div class="col-lg align-self-end">
-                                    <div class="form-group">
-                                        <div class="form-field">
-                                            <input type="submit" value="Buscar" class="form-control btn btn-primary">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center pb-5">
-                <div class="col-md-12 heading-section text-center ftco-animate">
-                    <h2 class="mb-4">Los mejores complejos deportivos de la ciudad</h2>
-                    <p>para que vos y tus amigos puedan realizar el deporte que prefieran</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="project">
-                        <div class="img">
-                            <img src="images/destination-1.jpg" class="img-fluid" alt="Colorlib Template">
-                        </div>
-                        <div class="text">
-                            <h4 class="price">$400</h4>
-                            <span>15 Days Tour</span>
-                            <h3><a href="project.html">Gurtnellen, Swetzerland</a></h3>
-                            <div class="star d-flex clearfix">
-                                <div class="mr-auto float-left">
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                </div>
-                                <div class="float-right">
-                                    <span class="rate"><a href="#">(120)</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="images/destination-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="project">
-                        <div class="img">
-                            <img src="images/destination-2.jpg" class="img-fluid" alt="Colorlib Template">
-                        </div>
-                        <div class="text">
-                            <h4 class="price">$400</h4>
-                            <span>15 Days Tour</span>
-                            <h3><a href="project.html">Gurtnellen, Swetzerland</a></h3>
-                            <div class="star d-flex clearfix">
-                                <div class="mr-auto float-left">
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                </div>
-                                <div class="float-right">
-                                    <span class="rate"><a href="#">(120)</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="images/destination-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="project">
-                        <div class="img">
-                            <img src="images/destination-3.jpg" class="img-fluid" alt="Colorlib Template">
-                        </div>
-                        <div class="text">
-                            <h4 class="price">$400</h4>
-                            <span>15 Days Tour</span>
-                            <h3><a href="project.html">Gurtnellen, Swetzerland</a></h3>
-                            <div class="star d-flex clearfix">
-                                <div class="mr-auto float-left">
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                </div>
-                                <div class="float-right">
-                                    <span class="rate"><a href="#">(120)</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="images/destination-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="project">
-                        <div class="img">
-                            <img src="images/destination-4.jpg" class="img-fluid" alt="Colorlib Template">
-                        </div>
-                        <div class="text">
-                            <h4 class="price">$400</h4>
-                            <span>15 Days Tour</span>
-                            <h3><a href="project.html">Gurtnellen, Swetzerland</a></h3>
-                            <div class="star d-flex clearfix">
-                                <div class="mr-auto float-left">
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                </div>
-                                <div class="float-right">
-                                    <span class="rate"><a href="#">(120)</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="images/destination-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-  <%--  <section class="ftco-section services-section bg-light">
-        <div class="container">
-            <div class="row d-flex">
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services d-block">
-                        <div class="icon"><span class="flaticon-yatch"></span></div>
-                        <div class="media-body">
-                            <h3 class="heading mb-3">Activities</h3>
-                            <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services d-block">
-                        <div class="icon"><span class="flaticon-around"></span></div>
-                        <div class="media-body">
-                            <h3 class="heading mb-3">Travel Arrangements</h3>
-                            <p>A small river named Duden flows by their place and supplies.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services d-block">
-                        <div class="icon"><span class="flaticon-compass"></span></div>
-                        <div class="media-body">
-                            <h3 class="heading mb-3">Private Guide</h3>
-                            <p>A small river named Duden flows by their place and supplies.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services d-block">
-                        <div class="icon"><span class="flaticon-map-of-roads"></span></div>
-                        <div class="media-body">
-                            <h3 class="heading mb-3">Location Manager</h3>
-                            <p>A small river named Duden flows by their place and supplies.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>--%>
-
-  <%--  <section class="ftco-counter img" id="section-counter">
-        <div class="container">
-            <div class="row d-flex">
-                <div class="col-md-6 d-flex">
-                    <div class="img d-flex align-self-stretch" style="background-image: url(images/about.jpg);"></div>
-                </div>
-                <div class="col-md-6 pl-md-5 py-5">
-                    <div class="row justify-content-start pb-3">
-                        <div class="col-md-12 heading-section ftco-animate">
-                            <h2 class="mb-4">About Traveland</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
-                            <div class="block-18 text-center py-5 bg-light mb-4">
-                                <div class="text">
-                                    <strong class="number" data-number="30">0</strong>
-                                    <span>Amazing Deals</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
-                            <div class="block-18 text-center py-5 bg-light mb-4">
-                                <div class="text">
-                                    <strong class="number" data-number="200">0</strong>
-                                    <span>Sold Tours</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
-                            <div class="block-18 text-center py-5 bg-light mb-4">
-                                <div class="text">
-                                    <strong class="number" data-number="2500">0</strong>
-                                    <span>New Tours</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
-                            <div class="block-18 text-center py-5 bg-light mb-4">
-                                <div class="text">
-                                    <strong class="number" data-number="40">0</strong>
-                                    <span>Happy Customers</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center pb-5">
-                <div class="col-md-12 heading-section text-center ftco-animate">
-                    <h2 class="mb-4">Hotel &amp; Restaurant</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 ftco-animate">
-                    <div class="project">
-                        <div class="img">
-                            <img src="images/hotel-resto-1.jpg" class="img-fluid" alt="Colorlib Template">
-                        </div>
-                        <div class="text">
-                            <h4 class="price">$600</h4>
-                            <span>300 per person</span>
-                            <h3><a href="project.html">New Orleans Hotel</a></h3>
-                            <div class="star d-flex clearfix">
-                                <div class="mr-auto float-left">
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                </div>
-                                <div class="float-right">
-                                    <span class="rate"><a href="#">(120)</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="images/hotel-resto-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 ftco-animate">
-                    <div class="project">
-                        <div class="img">
-                            <img src="images/hotel-resto-2.jpg" class="img-fluid" alt="Colorlib Template">
-                        </div>
-                        <div class="text">
-                            <h4 class="price">$600</h4>
-                            <span>300 per person</span>
-                            <h3><a href="project.html">New Orleans Hotel</a></h3>
-                            <div class="star d-flex clearfix">
-                                <div class="mr-auto float-left">
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                </div>
-                                <div class="float-right">
-                                    <span class="rate"><a href="#">(120)</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="images/hotel-resto-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 ftco-animate">
-                    <div class="project">
-                        <div class="img">
-                            <img src="images/hotel-resto-3.jpg" class="img-fluid" alt="Colorlib Template">
-                        </div>
-                        <div class="text">
-                            <h4 class="price">$600</h4>
-                            <span>300 per person</span>
-                            <h3><a href="project.html">New Orleans Restaurant</a></h3>
-                            <div class="star d-flex clearfix">
-                                <div class="mr-auto float-left">
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                    <span class="ion-ios-star"></span>
-                                </div>
-                                <div class="float-right">
-                                    <span class="rate"><a href="#">(120)</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="images/hotel-resto-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>--%>
-
-  <%--  <section class="ftco-counter img" id="section-counter">
-        <div class="container">
-            <div class="row d-flex">
-                <div class="col-md-6 order-md-last d-flex">
-                    <div class="img d-flex align-self-stretch" style="background-image: url(images/about-1.jpg);"></div>
-                </div>
-                <div class="col-md-6 pr-md-5 py-5">
-                    <div class="row justify-content-start pb-3">
-                        <div class="col-md-12 heading-section ftco-animate">
-                            <h2 class="mb-4">Things to Know Before Traveling to other Places</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="ftco-animate tips"><span>1.</span> A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                            <p class="ftco-animate tips"><span>2.</span> A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                            <p class="ftco-animate tips"><span>3.</span> It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                            <p class="ftco-animate mt-4"><a href="#" class="btn btn-primary py-3 px-5">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>--%>
-
-
-  <%--  <section class="ftco-section ftco-no-pb testimony-section" style="background-image: url(images/bg_1.jpg);">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                    <h2 class="mb-4">Happy Traveler Says</h2>
-                </div>
-            </div>
-            <div class="row ftco-animate">
-                <div class="col-md-12 testimonial">
-                    <div class="carousel-testimony owl-carousel ftco-owl">
-                        <div class="item">
-                            <div class="testimony-wrap img" style="background-image: url(images/traveler-1.jpg);">
-                                <div class="overlay"></div>
-                                <div class="text">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Roger Scott</p>
-                                    <span class="position">Marketing Manager</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap" style="background-image: url(images/traveler-2.jpg);">
-                                <div class="overlay"></div>
-                                <div class="text">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Roger Scott</p>
-                                    <span class="position">Interface Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap" style="background-image: url(images/traveler-3.jpg);">
-                                <div class="overlay"></div>
-                                <div class="text">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Roger Scott</p>
-                                    <span class="position">UI Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap" style="background-image: url(images/traveler-4.jpg);">
-                                <div class="overlay"></div>
-                                <div class="text">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Roger Scott</p>
-                                    <span class="position">Web Developer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap" style="background-image: url(images/traveler-5.jpg);">
-                                <div class="overlay"></div>
-                                <div class="text">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Roger Scott</p>
-                                    <span class="position">System Analyst</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>--%>
-
-  <%--  <section class="ftco-section bg-light">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-7 heading-section text-center ftco-animate">
-                    <h2>Recent Stories</h2>
-                </div>
-            </div>
-            <div class="row d-flex">
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');"></a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center pt-2 mb-4 topp">
-                                <div class="one">
-                                    <span class="day">12</span>
-                                </div>
-                                <div class="two">
-                                    <span class="yr">2019</span>
-                                    <span class="mos">February</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');"></a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center pt-2 mb-4 topp">
-                                <div class="one">
-                                    <span class="day">12</span>
-                                </div>
-                                <div class="two">
-                                    <span class="yr">2019</span>
-                                    <span class="mos">February</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');"></a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center pt-2 mb-4 topp">
-                                <div class="one">
-                                    <span class="day">12</span>
-                                </div>
-                                <div class="two">
-                                    <span class="yr">2019</span>
-                                    <span class="mos">February</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>--%>
-
-  <%--  <section class="ftco-subscribe" style="background-image: url(images/bg_1.jpg);">
-        <div class="overlay">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-10 text-wrap text-center heading-section ftco-animate">
-                        <h2>Subcribe to our Newsletter</h2>
-                        <div class="row d-flex justify-content-center mt-4 mb-4">
-                            <div class="col-md-10">
-                                <form action="#" class="subscribe-form">
-                                    <div class="form-group d-flex">
-                                        <input type="text" class="form-control" placeholder="Enter email address">
-                                        <input type="submit" value="Subscribe" class="submit px-3">
-                                    </div>
+                                    <button type="button" class="button rounded-0" onclick="consultarDeudaPersona(1);">Consultar</button>
                                 </form>
                             </div>
                         </div>
+                        <!-- Por DNI -->
+
+                        <%-- <!-- Por Dominio  -->
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="col-md-3 col-lg-2 text-center text-md-left mb-3 mb-md-0">
+                            </div>
+                            <div class="col-md-9 col-lg-10 pl-2 pl-xl-5">
+                                <form class="form-inline flex-nowrap form-domainSearch">
+                                    <div class="form-group">
+                                        <label for="patente" class="sr-only">Patente</label>
+                                        <input type="text" class="form-control" id="patente" placeholder="Patente">
+                                    </div>
+                                    <button type="button" class="button rounded-0" onclick="consultarDeudaVehiculo(2);">Consultar</button>
+                                </form>
+
+                            </div>
+                        </div>
+                        <!-- Por Dominio  -->--%>
                     </div>
                 </div>
+
+            </div>
+            <div class="row no-gutters">
             </div>
         </div>
-    </section>--%>
+    </section>
+    <!--================ Form =================-->
 
-    <footer class="ftco-footer ftco-footer-2 ftco-section">
+    <!-- ================ contact section start ================= -->
+    <section class="section-margin" id="contacto">
         <div class="container">
-            <div class="row mb-5">
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Traveland</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                        </ul>
-                    </div>
+            <div class="section-intro pb-85px text-center">
+                <h2>Contacto</h2>
+                <div class="section-style"></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="contact-title">Consultas o dudas</h2>
                 </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4 ml-md-5">
-                        <h2 class="ftco-heading-2">Infromation</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Online Enquiry</a></li>
-                            <li><a href="#" class="py-2 d-block">General Enquiries</a></li>
-                            <li><a href="#" class="py-2 d-block">Booking Conditions</a></li>
-                            <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
-                            <li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-                            <li><a href="#" class="py-2 d-block">Call Us</a></li>
-                        </ul>
-                    </div>
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <p style="text-align: justify; padding: 20px;">
+                        En caso de tener dudas o querer realizar este trámite personalmente, podés acercarte al Juzgado de Faltas o enviar una consulta a través del <a href="http://www.apronline.gov.ar/suav">147</a>, siguiendo la ruta ‘Asunto: impositivo, Tema: Patente Rodados, Motivo: Aviso baja rodados’.
+                    </p>
+
                 </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Experience</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Adventure</a></li>
-                            <li><a href="#" class="py-2 d-block">Hotel and Restaurant</a></li>
-                            <li><a href="#" class="py-2 d-block">Beach</a></li>
-                            <li><a href="#" class="py-2 d-block">Nature</a></li>
-                            <li><a href="#" class="py-2 d-block">Camping</a></li>
-                            <li><a href="#" class="py-2 d-block">Party</a></li>
-                        </ul>
+
+                <div class="col-lg-4">
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-home"></i></span>
+                        <div class="media-body">
+                            <h3>Juzgado de faltas</h3>
+                            <p>Calle 48 n° 1234</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Have a Questions?</h2>
-                        <div class="block-23 mb-3">
-                            <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
-                            </ul>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                        <div class="media-body">
+                            <h3><a href="tel:454545654">(0221) 22 499955</a></h3>
+                            <p>Lunes a viernes de 8 a 14 hs</p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-email"></i></span>
+                        <div class="media-body">
+                            <h3><a href="mailto:support@colorlib.com">ayuda@laplata.gov.ar</a></h3>
+                            <p>Envianos tu consulta!</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
+        </div>
+    </section>
+    <!-- ================ contact section end ================= -->
 
-                    <p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                        All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i>by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </p>
+    <!-- ================ start footer Area ================= -->
+    <footer class="footer-area section-gap" style="padding-top: 0px;">
+        <div class="container">
+            <div class="footer-bottom row align-items-center text-center text-lg-left">
+                <p class="footer-text m-0 col-lg-8 col-md-12">
+                    <img href="http://dis.laplata.gov.ar/" src="img/DIS.svg" style="width: 200px; height: 80px;">
+                </p>
+                <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+                    <!-- 					<a href="#"><i class="ti-facebook"></i></a>
+					<a href="#"><i class="ti-twitter-alt"></i></a> -->
                 </div>
             </div>
         </div>
     </footer>
+    <!-- ================ End footer Area ================= -->
 
 
 
-    <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen">
-        <svg class="circular" width="48px" height="48px">
-            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
-        </svg>
-    </div>
 
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
+    <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="js/juzgado.js"></script>
 </body>
 </html>

@@ -28,6 +28,6 @@ C:\Users\limoli\Source\Repos\LocosPorJugar\LocosXjugar\LocosXjugar\bin\Microsoft
 C:\Users\limoli\Source\Repos\LocosPorJugar\LocosXjugar\LocosXjugar\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\limoli\Source\Repos\LocosPorJugar\LocosXjugar\LocosXjugar\bin\Microsoft.ApplicationInsights.xml
 C:\Users\limoli\Source\Repos\LocosPorJugar\LocosXjugar\LocosXjugar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\limoli\Source\Repos\LocosPorJugar\LocosXjugar\LocosXjugar\obj\Debug\LocosXjugar.csprojResolveAssemblyReference.cache
 C:\Users\limoli\Source\Repos\LocosPorJugar\LocosXjugar\LocosXjugar\obj\Debug\LocosXjugar.dll
 C:\Users\limoli\Source\Repos\LocosPorJugar\LocosXjugar\LocosXjugar\obj\Debug\LocosXjugar.pdb
-C:\Users\limoli\Source\Repos\LocosPorJugar\LocosXjugar\LocosXjugar\obj\Debug\LocosXjugar.csprojResolveAssemblyReference.cache
