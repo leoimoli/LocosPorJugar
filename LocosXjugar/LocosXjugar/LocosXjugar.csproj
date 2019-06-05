@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="css\magnific-popup.css" />
     <Content Include="css\style.css" />
+    <Content Include="img\Calender_36946.png" />
     <Content Include="img\Pasto.jpg" />
     <Content Include="img\Tennis.png" />
     <Content Include="js\contact.js" />
@@ -565,6 +566,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases_Maestras\ValoresConstantes.cs" />
     <Compile Include="InicioWF.aspx.cs">
       <DependentUpon>InicioWF.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

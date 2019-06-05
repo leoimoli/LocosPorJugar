@@ -129,26 +129,40 @@
                             <div class="col-md-9 col-lg-10 pl-2 pl-xl-5">
                                 <!-- Busqueda por filtros -->
                                 <form class="form-inline flex-nowrap form-domainSearch" runat="server">
-                                    <table class="form-group">
+                                    <%--   <table class="form-group">
                                         <tr>
-                                            <td style="padding-left: 100px; color: #007380">
+                                            <td style="padding-left: 50px; color: #007380">
                                                 <asp:Label ID="QueJugas" runat="server" Text="Que Jugas?" Font-Size="Large"></asp:Label></td>
-                                            <td style="padding-left: 170px; color: #007380">
-                                                <asp:Label ID="Dia" runat="server" Text="Que Día?" Font-Size="Large"></asp:Label></td>
-                                            <td style="padding-left: 180px; color: #007380">
-                                                <asp:Label ID="Horario" runat="server" Text="Que Hora?" Font-Size="Large"></asp:Label></td>
+                                            <td style="padding-left: 130px; color: #007380">
+                                                <asp:Label ID="Dia" runat="server" Text="Que Día buscas?" Font-Size="Large"></asp:Label></td>
+                                            <td style="padding-left: 80px; color: #007380">
+                                                <asp:Label ID="Horario" runat="server" Text="Que Horario?" Font-Size="Large"></asp:Label></td>
                                         </tr>
                                         <tr>
-                                            <td style="padding-left: 30px">
+                                            <td style="padding-left: 0px">
                                                 <asp:DropDownList ID="cmbTipoDeJuego" runat="server" Width="250px" Height="35px"></asp:DropDownList></td>
-                                            <td style="padding-left: 110px">
-                                                <asp:Calendar ID="Calendar1" runat="server" Width="250px" Height="35px"></asp:Calendar>
-                                                <td style="padding-left: 120px">
-                                                    <asp:DropDownList ID="cmbHorario" runat="server" Width="250px" Height="35px"></asp:DropDownList></td>
-                                            <td style="padding-left: 100px">
+                                            <td style="padding-left: 70px">
+                                                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/img/Calender_36946.png" Height="52px" Width="64px" OnClick="ImageButton1_Click" />
+                                                <asp:TextBox ID="txtFecha" runat="server" Enabled="False" Width="217px" Height="16px" Visible="false"></asp:TextBox>
+                                                <asp:Calendar ID="Calendar1" runat="server" Width="189px" Height="22px" Visible="false" BackColor="White" BorderColor="#3366CC" BorderWidth="1px" CellPadding="1" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#003399" OnSelectionChanged="Calendar1_SelectionChanged">
+                                                    <DayHeaderStyle BackColor="#99CCCC" ForeColor="#336666" Height="1px" />
+                                                    <NextPrevStyle Font-Size="8pt" ForeColor="#CCCCFF" />
+                                                    <OtherMonthDayStyle ForeColor="#999999" />
+                                                    <SelectedDayStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
+                                                    <SelectorStyle BackColor="#99CCCC" ForeColor="#336666" />
+                                                    <TitleStyle BackColor="#003399" BorderColor="#3366CC" BorderWidth="1px" Font-Bold="True" Font-Size="10pt" ForeColor="#CCCCFF" Height="25px" />
+                                                    <TodayDayStyle BackColor="#99CCCC" ForeColor="White" />
+                                                    <WeekendDayStyle BackColor="#CCCCFF" />
+                                                </asp:Calendar>
+                                            </td>
+                                            <%-- <td style="padding-left: 110px">
+                                                <asp:TextBox ID="txtFecha" runat="server" Enabled="False" Width="150px" Visible="true"></asp:TextBox></td>--%>
+                                    <%-- <td style="padding-left: 80px">
+                                                <asp:DropDownList ID="cmbHorario" runat="server" Width="100px" Height="35px"></asp:DropDownList></td>
+                                            <td style="padding-left: 80px">
                                                 <button type="button" class="button rounded-0" onclick="consultarDeudaPersona(1);">Consultar</button></td>
                                         </tr>
-                                    </table>
+                                    </table>--%>
                                     <%-- <div class="form-group" style="padding-left: 15px">
                                     </div>
                                     <div class="form-group">
@@ -179,6 +193,30 @@
                                             <option value="7">Paddel</option>
                                             <option value="8">Tennis</option>
                                         </select>--%>
+                                    <div class="form-group">
+                                        <label for="cmbTipoDeJuego" class="sr-only">Tipo</label>
+                                        <select class="form-control" id="TipoCancha" required>
+                                            <option value="">Tipo De Cancha</option>
+                                            <option value="8">Basquet</option>
+                                            <option value="1">Fútbol 5</option>
+                                            <option value="2">Fútbol 6</option>
+                                            <option value="3">Fútbol 7</option>
+                                            <option value="4">Fútbol 9</option>
+                                            <option value="5">Fútbol 11</option>
+                                            <option value="6">Paddel</option>
+                                            <option value="7">Tennis</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nroDNI" class="sr-only">Numero</label>
+                                        <input type="text" class="form-control" id="nroDNI" placeholder="Número">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cmbHorario" class="sr-only">Tipo</label>
+                                        <asp:DropDownList class="form-control" ID="cmbHorario" runat="server" placeholder="Horario"></asp:DropDownList>
+                                    </div>
+                                    <button type="button" class="button rounded-0" onclick="consultarDeudaPersona(1);">Consultar</button>
+
                                 </form>
                             </div>
                         </div>
@@ -196,75 +234,45 @@
                 <h2>Complejos Deportivos</h2>
                 <div class="section-style"></div>
             </div>
-            <%--         <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card-service text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-search-dollar" style="font-size: 50px;"></i>
-                        </div>
-                        <h3>Busca tu día y horario</h3>
-                        <p>Completa los filtros y realiza la busqueda mas adecuada segun tu necesidad.  </p>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card-service text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-file-invoice-dollar" style="font-size: 50px;"></i>
-                        </div>
-                        <h3>Reserva tu turno</h3>
-                        <p>Selecciona el turno de la lista de disponibles. Una vez que hayas seleccionado el turno, completa los campos solicitados. </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card-service text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-money-check-alt" style="font-size: 50px;"></i>
-                        </div>
-                        <h3>Confirma el turno</h3>
-                        <p>Una vez completados los pasos previos, recibiras via email un código de confirmación con el cual cerrarias el circuito de reserva.  </p>
-                    </div>
-                </div>
-            </div>--%>
         </div>
     </section>
     <!--================ Confirma el turno =================-->
-    <section class="mb-5 pt-xl-235" style="padding-top: 50px;" id="TurnoConfirmar">
+    <section class="bg-gray domain-search" id="TurnoConfirmar">
+        <div class="section-intro pb-85px text-center">
+            <h2>Confirma el turno</h2>
+            <div class="section-style"></div>
+        </div>
         <div class="container">
-            <div class="section-intro pb-85px text-center">
-                <h2>Confirma tu turno</h2>
-                <div class="section-style"></div>
-            </div>
-            <%--         <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card-service text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-search-dollar" style="font-size: 50px;"></i>
+            <div class="row no-gutters">
+                <div class="col-md-12">
+                    <br>
+                    <hr>
+                    <div class="tab-content" id="pills-tabContent">
+                        <!-- Por DNI -->
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="col-md-3 col-lg-2 text-center text-md-left mb-3 mb-md-0">
+                            </div>
+                            <div class="col-md-9 col-lg-10 pl-2 pl-xl-5">
+                                <form class="form-inline flex-nowrap form-domainSearch">
+                                    <div class="form-group">
+                                        <label for="email" class="sr-only">Email</label>
+                                        <input type="text" class="form-control" id="Email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="codigo" class="sr-only">Código de seguridad</label>
+                                        <input type="text" class="form-control" id="codigo" placeholder="Código de seguridad">
+                                    </div>
+                                    <button type="button" class="button rounded-0" onclick="consultarDeudaPersona(1);">Consultar</button>
+                                </form>
+                            </div>
                         </div>
-                        <h3>Busca tu día y horario</h3>
-                        <p>Completa los filtros y realiza la busqueda mas adecuada segun tu necesidad.  </p>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card-service text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-file-invoice-dollar" style="font-size: 50px;"></i>
-                        </div>
-                        <h3>Reserva tu turno</h3>
-                        <p>Selecciona el turno de la lista de disponibles. Una vez que hayas seleccionado el turno, completa los campos solicitados. </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card-service text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-money-check-alt" style="font-size: 50px;"></i>
-                        </div>
-                        <h3>Confirma el turno</h3>
-                        <p>Una vez completados los pasos previos, recibiras via email un código de confirmación con el cual cerrarias el circuito de reserva.  </p>
-                    </div>
-                </div>
-            </div>--%>
+            </div>
+            <div class="row no-gutters">
+            </div>
         </div>
     </section>
     <!--================ Info =================-->
