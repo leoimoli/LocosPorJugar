@@ -136,20 +136,50 @@
                     <hr>
                     <div class="tab-content" id="pills-tabContent">
 
-                        <!-- Por DNI -->
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <div class="col-md-3 col-lg-2 text-center text-md-left mb-3 mb-md-0">
-                            </div>
                             <div class="col-md-9 col-lg-10 pl-2 pl-xl-5">
+                                <!-- Busqueda por filtros -->
                                 <form class="form-inline flex-nowrap form-domainSearch" runat="server">
+                                    <table class="form-group">
+                                        <tr>
+                                            <td style="padding-left: 100px; color: #007380">
+                                                <asp:Label ID="QueJugas" runat="server" Text="Que Jugas?" Font-Size="Large"></asp:Label></td>
+                                            <td style="padding-left: 170px; color: #007380">
+                                                <asp:Label ID="Dia" runat="server" Text="Que Día?" Font-Size="Large"></asp:Label></td>
+                                            <td style="padding-left: 180px; color: #007380">
+                                                <asp:Label ID="Horario" runat="server" Text="Que Hora?" Font-Size="Large"></asp:Label></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding-left: 30px">
+                                                <asp:DropDownList ID="cmbTipoDeJuego" runat="server" Width="250px" Height="35px"></asp:DropDownList></td>
+                                            <td style="padding-left: 110px">
+                                                <asp:Calendar ID="Calendar1" runat="server" Width="250px" Height="35px"></asp:Calendar>
+                                            <td style="padding-left: 120px">
+                                                <asp:DropDownList ID="cmbHorario" runat="server" Width="250px" Height="35px"></asp:DropDownList></td>
+                                            <td style="padding-left: 100px">
+                                                <button type="button" class="button rounded-0" onclick="consultarDeudaPersona(1);">Consultar</button></td>
+                                        </tr>
+                                    </table>
+                                    <%-- <div class="form-group" style="padding-left: 15px">
+                                    </div>
                                     <div class="form-group">
-                                        <div style="text-align: center; padding-left: 100px">
-                                            <asp:Label ID="QueJugas" runat="server" Text="Que Jugas?"></asp:Label>
-                                        </div>
-                                        <div>
-                                            <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
-                                        </div>
-                                        <%-- <label for="TipoDeCancha" class="sr-only">Que Jugas?</label>
+                                        <h1>
+                                            <asp:Label ID="QueJugas" runat="server" Text="Que Jugas?" Font-Size="Large"></asp:Label>
+                                        </h1>
+                                    </div>
+                                    <div class="form-group" style="padding-left: 50px">
+                                    </div>
+                                    <div class="form-group">
+                                        <h2>
+                                            <asp:Label ID="Fecha" runat="server" Text="Que Día?" Font-Size="Large"></asp:Label></h2>
+                                    </div>
+                                    <div class="form-group" style="padding-left: 50px">
+                                    </div>
+                                    <div class="form-group">
+                                        <h3>
+                                            <asp:Label ID="Hora" runat="server" Text="Que Horario?" Font-Size="Large"></asp:Label></h3>
+                                    </div>--%>
+                                    <%-- <label for="TipoDeCancha" class="sr-only">Que Jugas?</label>
                                         <select class="form-control" id="TipoDeCancha" required>
                                             <option value="0">Basquet</option>
                                             <option value="2">Fútbol 5</option>
@@ -160,18 +190,25 @@
                                             <option value="7">Paddel</option>
                                             <option value="8">Tennis</option>
                                         </select>--%>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="nroDNI" class="sr-only">Numero</label>
-                                        <input type="text" class="form-control" id="nroDNI" placeholder="Número">
-                                    </div>
+                                    <%--  </div>
+                            <div class="form-group">
+                                <h4>
+                                    <asp:DropDownList ID="cmbTipoDeJuego" runat="server" Width="250px" Height="35px"></asp:DropDownList>
+                                    <asp:DropDownList ID="DropDownList2" runat="server" Width="250px" Height="35px"></asp:DropDownList>
+                                    <asp:DropDownList ID="cmbHorario" runat="server" Width="250px" Height="35px"></asp:DropDownList>
+
                                     <button type="button" class="button rounded-0" onclick="consultarDeudaPersona(1);">Consultar</button>
+                                </h4>
+                            </div>--%>
+                                    <%-- <div class="form-group">
+                                <label for="nroDNI" class="sr-only">Numero</label>
+                                <input type="text" class="form-control" id="nroDNI" placeholder="Número">
+                            </div>--%>
                                 </form>
                             </div>
                         </div>
-                        <!-- Por DNI -->
-
-                        <%-- <!-- Por Dominio  -->
+                    </div>
+                    <%-- <!-- Por Dominio  -->
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                             <div class="col-md-3 col-lg-2 text-center text-md-left mb-3 mb-md-0">
                             </div>
@@ -187,12 +224,10 @@
                             </div>
                         </div>
                         <!-- Por Dominio  -->--%>
-                    </div>
                 </div>
-
             </div>
-            <div class="row no-gutters">
-            </div>
+        </div>
+        <div class="row no-gutters">
         </div>
     </section>
     <!--================ Form =================-->
@@ -241,6 +276,7 @@
             </div>
         </div>
     </section>
+
     <!-- ================ contact section end ================= -->
 
     <!-- ================ start footer Area ================= -->
