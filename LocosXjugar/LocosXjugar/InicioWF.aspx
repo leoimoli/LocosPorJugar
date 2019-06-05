@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <!--================ Header Menu Area start =================-->
     <header class="header_area">
         <div class="main_menu">
@@ -38,9 +37,9 @@
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav justify-content-end">
                             <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#informacion">Complejos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#formulario">Sumate</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#informacion">Información</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#complejos">Complejos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contacto">Sumate</a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,24 +47,21 @@
         </div>
     </header>
     <!--================Header Menu Area =================-->
-
-
     <!--================ Bienvenido =================-->
     <section class="hero-banner text-center" id="inicio">
         <div class="container">
             <p class="text-uppercase">Bienvenido</p>
             <h1>Locos x Jugar</h1>
             <p class="hero-subtitle">Encontra el momento y lugar indicado para practicar tu deporte preferido</p>
-            <a class="button button-outline" href="#informacion">BUSCAR</a>
+            <a class="button button-outline" href="#formulario">BUSCAR</a>
+            <a class="button button-outline" href="#TurnoConfirmar">CONFIRMAR</a>
         </div>
     </section>
-    <!--================ Bienvenido =================-->
-
     <!--================ Info =================-->
     <section class="mb-5 pt-xl-235" style="padding-top: 50px;" id="informacion">
         <div class="container">
             <div class="section-intro pb-85px text-center">
-                <h2>Información del trámite</h2>
+                <h2>Segui el circuito y reserva</h2>
                 <div class="section-style"></div>
             </div>
             <div class="row">
@@ -74,8 +70,8 @@
                         <div class="service-icon">
                             <i class="fa fa-search-dollar" style="font-size: 50px;"></i>
                         </div>
-                        <h3>Consultá tu deuda</h3>
-                        <p>Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great  </p>
+                        <h3>Busca tu día y horario</h3>
+                        <p>Completa los filtros y realiza la busqueda mas adecuada segun tu necesidad.  </p>
                     </div>
                 </div>
 
@@ -84,37 +80,30 @@
                         <div class="service-icon">
                             <i class="fa fa-file-invoice-dollar" style="font-size: 50px;"></i>
                         </div>
-                        <h3>Imprimí el comprobante</h3>
-                        <p>Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great  </p>
+                        <h3>Reserva tu turno</h3>
+                        <p>Selecciona el turno de la lista de disponibles. Una vez que hayas seleccionado el turno, completa los campos solicitados. </p>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-sm-6">
                     <div class="card-service text-center">
                         <div class="service-icon">
                             <i class="fa fa-money-check-alt" style="font-size: 50px;"></i>
                         </div>
-                        <h3>Pagalo en cualquier Bapro</h3>
-                        <p>Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great  </p>
+                        <h3>Confirma el turno</h3>
+                        <p>Una vez completados los pasos previos, recibiras via email un código de confirmación con el cual cerrarias el circuito de reserva.  </p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <!--================ Info =================-->
-
     <!--================ Modal persona =================-->
     <div class="modal fade" id="modal-persona" tabindex="-1" role="dialog" aria-labelledby="label-persona" aria-hidden="true">
     </div>
     <!--================ Modal persona =================-->
-
     <!--================ Modal vehiculo =================-->
     <div class="modal fade" id="modal-vehiculo" tabindex="-1" role="dialog" aria-labelledby="label-vehiculo" aria-hidden="true">
     </div>
     <!--================ Modal vehiculo =================-->
-
-
     <!--================ Form =================-->
     <section class="bg-gray domain-search" id="formulario">
         <div class="section-intro pb-85px text-center">
@@ -154,8 +143,8 @@
                                                 <asp:DropDownList ID="cmbTipoDeJuego" runat="server" Width="250px" Height="35px"></asp:DropDownList></td>
                                             <td style="padding-left: 110px">
                                                 <asp:Calendar ID="Calendar1" runat="server" Width="250px" Height="35px"></asp:Calendar>
-                                            <td style="padding-left: 120px">
-                                                <asp:DropDownList ID="cmbHorario" runat="server" Width="250px" Height="35px"></asp:DropDownList></td>
+                                                <td style="padding-left: 120px">
+                                                    <asp:DropDownList ID="cmbHorario" runat="server" Width="250px" Height="35px"></asp:DropDownList></td>
                                             <td style="padding-left: 100px">
                                                 <button type="button" class="button rounded-0" onclick="consultarDeudaPersona(1);">Consultar</button></td>
                                         </tr>
@@ -190,48 +179,95 @@
                                             <option value="7">Paddel</option>
                                             <option value="8">Tennis</option>
                                         </select>--%>
-                                    <%--  </div>
-                            <div class="form-group">
-                                <h4>
-                                    <asp:DropDownList ID="cmbTipoDeJuego" runat="server" Width="250px" Height="35px"></asp:DropDownList>
-                                    <asp:DropDownList ID="DropDownList2" runat="server" Width="250px" Height="35px"></asp:DropDownList>
-                                    <asp:DropDownList ID="cmbHorario" runat="server" Width="250px" Height="35px"></asp:DropDownList>
-
-                                    <button type="button" class="button rounded-0" onclick="consultarDeudaPersona(1);">Consultar</button>
-                                </h4>
-                            </div>--%>
-                                    <%-- <div class="form-group">
-                                <label for="nroDNI" class="sr-only">Numero</label>
-                                <input type="text" class="form-control" id="nroDNI" placeholder="Número">
-                            </div>--%>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <%-- <!-- Por Dominio  -->
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                            <div class="col-md-3 col-lg-2 text-center text-md-left mb-3 mb-md-0">
-                            </div>
-                            <div class="col-md-9 col-lg-10 pl-2 pl-xl-5">
-                                <form class="form-inline flex-nowrap form-domainSearch">
-                                    <div class="form-group">
-                                        <label for="patente" class="sr-only">Patente</label>
-                                        <input type="text" class="form-control" id="patente" placeholder="Patente">
-                                    </div>
-                                    <button type="button" class="button rounded-0" onclick="consultarDeudaVehiculo(2);">Consultar</button>
-                                </form>
-
-                            </div>
-                        </div>
-                        <!-- Por Dominio  -->--%>
                 </div>
             </div>
         </div>
         <div class="row no-gutters">
         </div>
     </section>
-    <!--================ Form =================-->
+    <!--================ Complejos =================-->
+    <section class="mb-5 pt-xl-235" style="padding-top: 50px;" id="complejos">
+        <div class="container">
+            <div class="section-intro pb-85px text-center">
+                <h2>Complejos Deportivos</h2>
+                <div class="section-style"></div>
+            </div>
+            <%--         <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-service text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-search-dollar" style="font-size: 50px;"></i>
+                        </div>
+                        <h3>Busca tu día y horario</h3>
+                        <p>Completa los filtros y realiza la busqueda mas adecuada segun tu necesidad.  </p>
+                    </div>
+                </div>
 
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-service text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-file-invoice-dollar" style="font-size: 50px;"></i>
+                        </div>
+                        <h3>Reserva tu turno</h3>
+                        <p>Selecciona el turno de la lista de disponibles. Una vez que hayas seleccionado el turno, completa los campos solicitados. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-service text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-money-check-alt" style="font-size: 50px;"></i>
+                        </div>
+                        <h3>Confirma el turno</h3>
+                        <p>Una vez completados los pasos previos, recibiras via email un código de confirmación con el cual cerrarias el circuito de reserva.  </p>
+                    </div>
+                </div>
+            </div>--%>
+        </div>
+    </section>
+    <!--================ Confirma el turno =================-->
+    <section class="mb-5 pt-xl-235" style="padding-top: 50px;" id="TurnoConfirmar">
+        <div class="container">
+            <div class="section-intro pb-85px text-center">
+                <h2>Confirma tu turno</h2>
+                <div class="section-style"></div>
+            </div>
+            <%--         <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-service text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-search-dollar" style="font-size: 50px;"></i>
+                        </div>
+                        <h3>Busca tu día y horario</h3>
+                        <p>Completa los filtros y realiza la busqueda mas adecuada segun tu necesidad.  </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-service text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-file-invoice-dollar" style="font-size: 50px;"></i>
+                        </div>
+                        <h3>Reserva tu turno</h3>
+                        <p>Selecciona el turno de la lista de disponibles. Una vez que hayas seleccionado el turno, completa los campos solicitados. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card-service text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-money-check-alt" style="font-size: 50px;"></i>
+                        </div>
+                        <h3>Confirma el turno</h3>
+                        <p>Una vez completados los pasos previos, recibiras via email un código de confirmación con el cual cerrarias el circuito de reserva.  </p>
+                    </div>
+                </div>
+            </div>--%>
+        </div>
+    </section>
+    <!--================ Info =================-->
     <!-- ================ contact section start ================= -->
     <section class="section-margin" id="contacto">
         <div class="container">
@@ -276,9 +312,7 @@
             </div>
         </div>
     </section>
-
     <!-- ================ contact section end ================= -->
-
     <!-- ================ start footer Area ================= -->
     <footer class="footer-area section-gap" style="padding-top: 0px;">
         <div class="container">
@@ -294,10 +328,6 @@
         </div>
     </footer>
     <!-- ================ End footer Area ================= -->
-
-
-
-
     <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="vendors/owl-carousel/owl.carousel.min.js"></script>

@@ -108,6 +108,7 @@
     <Content Include="js\mail-script.js" />
     <Content Include="js\main.js" />
     <Content Include="js\skrollr.min.js" />
+    <Content Include="MuestraWF.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -570,6 +571,13 @@
     </Compile>
     <Compile Include="InicioWF.aspx.designer.cs">
       <DependentUpon>InicioWF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MuestraWF.aspx.cs">
+      <DependentUpon>MuestraWF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MuestraWF.aspx.designer.cs">
+      <DependentUpon>MuestraWF.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
