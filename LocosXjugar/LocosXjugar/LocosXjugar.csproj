@@ -95,10 +95,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\magnific-popup.css" />
+    <Content Include="css\Prueba.css" />
     <Content Include="css\style.css" />
+    <Content Include="img\Basquet.png" />
     <Content Include="img\Calender_36946.png" />
+    <Content Include="img\Futbol.png" />
+    <Content Include="img\Paleta_Paddel.png" />
     <Content Include="img\Pasto.jpg" />
     <Content Include="img\Tennis.png" />
+    <Content Include="img\Tennis_Lucas.png" />
     <Content Include="js\contact.js" />
     <Content Include="js\countdown.js" />
     <Content Include="js\jquery.ajaxchimp.min.js" />
@@ -106,6 +111,7 @@
     <Content Include="js\jquery.magnific-popup.min.js" />
     <Content Include="js\jquery.validate.min.js" />
     <Content Include="js\juzgado.js" />
+    <Content Include="js\LocosPorJugar.js" />
     <Content Include="js\mail-script.js" />
     <Content Include="js\main.js" />
     <Content Include="js\skrollr.min.js" />
@@ -129,6 +135,7 @@
     <Content Include="scss\modules\_responsive.scss" />
     <Content Include="scss\modules\_section-style.scss" />
     <Content Include="scss\modules\_variables.scss" />
+    <Content Include="Template\production\form_advanced.html" />
     <Content Include="vendors\flat-icon\font\flaticon.css" />
     <Content Include="vendors\flat-icon\font\flaticon.html" />
     <Content Include="vendors\flat-icon\NewFolder1\font\flaticon.css" />

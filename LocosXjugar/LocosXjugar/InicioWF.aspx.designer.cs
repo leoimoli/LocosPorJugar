@@ -11,14 +11,5 @@ namespace LocosXjugar {
     
     
     public partial class InicioWF {
-        
-        /// <summary>
-        /// cmbHorario control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cmbHorario;
     }
 }

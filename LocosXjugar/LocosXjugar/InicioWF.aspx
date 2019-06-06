@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendors/themify-icons/index.html">
 </head>
 <body>
     <!--================ Header Menu Area start =================-->
@@ -24,9 +24,10 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container box_1620">
                     <a class="navbar-brand logo_h" href="index.html">
-                        <img src="img/Tennis.png" alt="">
-                        <img src="img/Tennis.png" alt="">
-                        <img src="img/Tennis.png" alt="">
+                        <img src="img/Futbol.png" alt="">
+                        <img src="img/Tennis_Lucas.png" alt="">
+                        <img src="img/Basquet.png" alt="">
+                        <img src="img/Paleta_Paddel.png" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
@@ -157,12 +158,6 @@
                                             </td>
                                             <%-- <td style="padding-left: 110px">
                                                 <asp:TextBox ID="txtFecha" runat="server" Enabled="False" Width="150px" Visible="true"></asp:TextBox></td>--%>
-                                    <%-- <td style="padding-left: 80px">
-                                                <asp:DropDownList ID="cmbHorario" runat="server" Width="100px" Height="35px"></asp:DropDownList></td>
-                                            <td style="padding-left: 80px">
-                                                <button type="button" class="button rounded-0" onclick="consultarDeudaPersona(1);">Consultar</button></td>
-                                        </tr>
-                                    </table>--%>
                                     <%-- <div class="form-group" style="padding-left: 15px">
                                     </div>
                                     <div class="form-group">
@@ -207,16 +202,46 @@
                                             <option value="7">Tennis</option>
                                         </select>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="nroDNI" class="sr-only">Numero</label>
-                                        <input type="text" class="form-control" id="nroDNI" placeholder="Número">
+                                    <%-- <a class="navbar-brand logo_h" href="index.html">--%>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="txt_AltaJugadorWF_FechaNacimiento">Que día?:<span class="kv-reqd"> (*)</span></label>
+                                            <div class="row calendar-exibit">
+                                                <div class="control-group">
+                                                    <div class="controls">
+                                                        <div class="col-md-12 xdisplay_inputx form-group has-feedback">
+                                                            <input type="text" class="form-control has-feedback-left" id="single_cal2" aria-describedby="inputSuccess2Status2">
+                                                            <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+                                                            <span id="inputSuccess2Status2" class="sr-only">(success)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <%--<div class="form-group">
+                                        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/img/Calender_36946.png" Height="52px" Width="64px" OnClick="ImageButton1_Click" />
+                                        <asp:TextBox ID="txtFecha" runat="server" Enabled="False" Width="217px" Height="60px" placeholder="Que día estas buscando?"></asp:TextBox>
+                                        <asp:Calendar ID="Calendar1" runat="server" Height="50px" Width="50px" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
+                                    </div>--%>
                                     <div class="form-group">
+                                        <label id="cmbHorario" for="cmbHorario" class="sr-only">Tipo</label>
+                                        <select class="form-control" id="cmbHorario2" required>
+                                            <option value="">Tipo De Cancha</option>
+                                            <option value="1">Fútbol 5</option>
+                                            <option value="2">Fútbol 6</option>
+                                            <option value="3">Fútbol 7</option>
+                                            <option value="4">Fútbol 9</option>
+                                            <option value="5">Fútbol 11</option>
+                                            <option value="6">Paddel</option>
+                                            <option value="7">Tennis</option>
+                                        </select>
+                                    </div>
+                                    <%--  <div class="form-group">
                                         <label for="cmbHorario" class="sr-only">Tipo</label>
                                         <asp:DropDownList class="form-control" ID="cmbHorario" runat="server" placeholder="Horario"></asp:DropDownList>
-                                    </div>
+                                    </div>--%>
                                     <button type="button" class="button rounded-0" onclick="consultarDeudaPersona(1);">Consultar</button>
-
                                 </form>
                             </div>
                         </div>
