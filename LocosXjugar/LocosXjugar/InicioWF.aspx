@@ -69,7 +69,8 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="card-service text-center">
                         <div class="service-icon">
-                            <i class="fa fa-search-dollar" style="font-size: 50px;"></i>
+                            <i class="fa fa-search-dollar" style="font-size: 50px;" dir="ltr"></i>
+                            <i class=" "></i>
                         </div>
                         <h3>Busca tu día y horario</h3>
                         <p>Completa los filtros y realiza la busqueda mas adecuada segun tu necesidad.  </p>
@@ -125,7 +126,6 @@
                     <br>
                     <hr>
                     <div class="tab-content" id="pills-tabContent">
-
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                             <div class="col-md-9 col-lg-10 pl-2 pl-xl-5">
                                 <!-- Busqueda por filtros -->
