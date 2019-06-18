@@ -99,6 +99,8 @@
     <Content Include="css\style.css" />
     <Content Include="img\Basquet.png" />
     <Content Include="img\Calender_36946.png" />
+    <Content Include="img\Complejo.png" />
+    <Content Include="img\ElDesafio.jpg" />
     <Content Include="img\Futbol.png" />
     <Content Include="img\Paleta_Paddel.png" />
     <Content Include="img\Pasto.jpg" />

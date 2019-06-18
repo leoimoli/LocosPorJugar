@@ -69,18 +69,18 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="card-service text-center">
                         <div class="service-icon">
-                            <i class="fa fa-search-dollar" style="font-size: 50px;" dir="ltr"></i>
-                            <i class=" "></i>
+                            <i class="fas fa-search-location" style="font-size: 50px;" dir="ltr"></i>
                         </div>
-                        <h3>Busca tu día y horario</h3>
-                        <p>Completa los filtros y realiza la busqueda mas adecuada segun tu necesidad.  </p>
+                        <h3>Busca tu día, lugar y horario</h3>
+                        <p>Completa los filtros y realiza la busqueda más adecuada segun tu necesidad.  </p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-sm-6">
                     <div class="card-service text-center">
                         <div class="service-icon">
-                            <i class="fa fa-file-invoice-dollar" style="font-size: 50px;"></i>
+                            <i class="far fa-calendar-check" style="font-size: 50px;"></i>
+                            <%-- <i class="fa fa-money-check-alt" style="font-size: 50px;"></i>--%>
                         </div>
                         <h3>Reserva tu turno</h3>
                         <p>Selecciona el turno de la lista de disponibles. Una vez que hayas seleccionado el turno, completa los campos solicitados. </p>
@@ -89,7 +89,7 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="card-service text-center">
                         <div class="service-icon">
-                            <i class="fa fa-money-check-alt" style="font-size: 50px;"></i>
+                            <i class="far fa-check-circle" style="font-size: 50px;"></i>
                         </div>
                         <h3>Confirma el turno</h3>
                         <p>Una vez completados los pasos previos, recibiras via email un código de confirmación con el cual cerrarias el circuito de reserva.  </p>
@@ -101,11 +101,9 @@
     <!--================ Modal persona =================-->
     <div class="modal fade" id="modal-persona" tabindex="-1" role="dialog" aria-labelledby="label-persona" aria-hidden="true">
     </div>
-    <!--================ Modal persona =================-->
     <!--================ Modal vehiculo =================-->
     <div class="modal fade" id="modal-vehiculo" tabindex="-1" role="dialog" aria-labelledby="label-vehiculo" aria-hidden="true">
     </div>
-    <!--================ Modal vehiculo =================-->
     <!--================ Form =================-->
     <section class="bg-gray domain-search" id="formulario">
         <div class="section-intro pb-85px text-center">
@@ -258,8 +256,34 @@
             <div class="section-intro pb-85px text-center">
                 <h2>Complejos Deportivos</h2>
                 <div class="section-style"></div>
+                <%--   <div class="container">--%>
+                <%--   <div class="row no-gutters">
+                        <div class="col-md-12">--%>
             </div>
-
+            <div class="section-intro pb-85px text-center">
+                <asp:Label ID="lblComplejo1" runat="server" Text="Complejo" Font-Size="Large" ForeColor="Black"></asp:Label>
+                <img id="ImgComplejo1" alt="" src="img/ElDesafio.jpg" style="width: 500px; height: 180px;" />
+                <button type="button" style="width: 300px; background-color: #007380; color: white" onclick="consultarDeudaPersona(1);">Ver Agenda</button>
+            </div>
+            <div class="section-intro pb-85px text-center">
+                <asp:Label ID="lblComplejo2" runat="server" Text="Complejo" Font-Size="Large" ForeColor="Black"></asp:Label>
+                <img id="ImgComplejo2" alt="" src="img/Complejo.png" style="width: 500px; height: 180px;" />
+                <button type="button" style="width: 300px; background-color: #007380; color: white" onclick="consultarDeudaPersona(1);">Ver Agenda</button>
+            </div>
+            <div class="section-intro pb-85px text-center">
+                <asp:Label ID="lblComplejo3" runat="server" Text="Complejo" Font-Size="Large" ForeColor="Black"></asp:Label>
+                <img id="ImgComplejo3" alt="" src="img/Complejo.png" style="width: 500px; height: 180px;" />
+                <button type="button" style="width: 300px; background-color: #007380; color: white" onclick="consultarDeudaPersona(1);">Ver Agenda</button>
+            </div>
+            <%-- <table>
+                <tr>
+                    <td style="width: 100px; height: 150px; padding-left: 350px">
+                        <asp:Label ID="lblComplejo1" runat="server" Text="Complejo" Font-Size="Large"></asp:Label>
+                        <img id="ImgComplejo1" alt="" src="" style="width: 400px; height: 80px; padding-left: 50px; padding-top: 0px" />
+                        <button type="button" style="width: 350px; background-color: #007380; color: white" onclick="consultarDeudaPersona(1);">Ver Agenda</button>
+                    </td>
+                </tr>
+            </table>--%>
         </div>
     </section>
     <!--================ Confirma el turno =================-->

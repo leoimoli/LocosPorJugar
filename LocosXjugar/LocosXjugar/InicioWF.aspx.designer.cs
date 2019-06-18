@@ -11,5 +11,32 @@ namespace LocosXjugar {
     
     
     public partial class InicioWF {
+        
+        /// <summary>
+        /// lblComplejo1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblComplejo1;
+        
+        /// <summary>
+        /// lblComplejo2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblComplejo2;
+        
+        /// <summary>
+        /// lblComplejo3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblComplejo3;
     }
 }
